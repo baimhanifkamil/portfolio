@@ -737,4 +737,12 @@ textarea:focus{background:#f4f4f4; height:250px;}
 img.center {
     display: block;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto 
+}
+
+
+/*to add drop shadow*/
+img.drop-shadow {
+box-shadow: 4px 4px 10px rgba(0,0,0,.2);
+}
+
