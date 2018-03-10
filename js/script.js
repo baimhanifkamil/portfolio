@@ -18,45 +18,45 @@ Load Page
 Ajax link page transitions
 ---------------------------------------------*/
 
-	$("a.ajax-link").live("click", function(){
-		$this = $(this);
-		var link = $this.attr('href');
-		var current_url = $(location).attr('href');
-
-		if( link != current_url && link != '#' ) {
-		$.ajax({
-			url:link,
-			processData:true,
-			dataType:'html',
-			success:function(data){
-				document.title = $(data).filter('title').text();
-				current_url = link;
-        if (typeof history.pushState != 'undefined') history.pushState(data, 'Page', link);
-
-          setTimeout(function(){
-          $('#preloader').delay(50).fadeIn(600);
-          $('html, body').delay(1000).animate({ scrollTop:  0  },1000);
-
-					setTimeout(function(){
-
-            $('#ajax-content').html($(data).filter('#ajax-content').html());
-            $('#ajax-sidebar').html($(data).filter('#ajax-sidebar').html());
-
-						$('body').waitForImages({
-							finished: function() {
-								Website();
-								backLoading();
-								$('.opacity-nav').delay(10).fadeOut(50);
-              },
-              waitForAll: true
-						});
-					},100);
-					},0);
-			}
-		});
-    }
-    return false;
-	});
+	// $("a.ajax-link").live("click", function(){
+	// 	$this = $(this);
+	// 	var link = $this.attr('href');
+	// 	var current_url = $(location).attr('href');
+	//
+	// 	if( link != current_url && link != '#' ) {
+	// 	$.ajax({
+	// 		url:link,
+	// 		processData:true,
+	// 		dataType:'html',
+	// 		success:function(data){
+	// 			document.title = $(data).filter('title').text();
+	// 			current_url = link;
+  //       if (typeof history.pushState != 'undefined') history.pushState(data, 'Page', link);
+	//
+  //         setTimeout(function(){
+  //         $('#preloader').delay(50).fadeIn(600);
+  //         $('html, body').delay(1000).animate({ scrollTop:  0  },1000);
+	//
+	// 				setTimeout(function(){
+	//
+  //           $('#ajax-content').html($(data).filter('#ajax-content').html());
+  //           $('#ajax-sidebar').html($(data).filter('#ajax-sidebar').html());
+	//
+	// 					$('body').waitForImages({
+	// 						finished: function() {
+	// 							Website();
+	// 							backLoading();
+	// 							$('.opacity-nav').delay(10).fadeOut(50);
+  //             },
+  //             waitForAll: true
+	// 					});
+	// 				},100);
+	// 				},0);
+	// 		}
+	// 	});
+  //   }
+  //   return false;
+	// });
 
 
 /*-------------------------------------------
