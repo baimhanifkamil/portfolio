@@ -34,6 +34,16 @@ li{
   letter-spacing:1px;
 }
 
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
 a{
   text-decoration:none;
   -webkit-transition: all 0.2s ease-in;
@@ -374,6 +384,14 @@ CONTENT
   position:relative;
   width:1140px;
   margin:50px auto;
+}
+
+.caption {
+  font-size: 90% !important;
+  /* font-family: Verdana, Arial, sans-serif; */
+  text-align: center;
+  font-style: italic;
+  margin-top: 13px !important;
 }
 
 
