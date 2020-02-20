@@ -59,6 +59,12 @@ a:focus {
   outline: none;
 }
 
+a.disable {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+
 strong {
   font-weight: 700;
 }
@@ -401,7 +407,7 @@ CONTENT
 
 .content .text-intro h1 {
   font-size: 43px;
-  width: 40%;
+  width: 70%;
   text-transform: uppercase;
   color: #2980b9;
   font-weight: 900;
@@ -415,7 +421,7 @@ CONTENT
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 1px;
-  width: 40%;
+  width: 70%;
 }
 
 .typed-cursor {
@@ -847,9 +853,9 @@ h3 {
   font-weight:1200;
 } */
 
-.fav-label {
+.fav-label, .coming-soon-label {
   position: absolute;
-  background: #FDDB3E;
+  /* background: #FDDB3E; */
   color: white;
   padding: 4px;
   /* bottom: 22px;
@@ -861,7 +867,18 @@ h3 {
   /* border-radius: 5px; */
 }
 
-.fav-label p {
+.fav-label {
+  background: #FDDB3E;
+}
+
+.coming-soon-label {
+  background: #2E2B33;
+}
+
+
+
+
+.fav-label p, .coming-soon-label p {
   font-size:13px;
 }
 

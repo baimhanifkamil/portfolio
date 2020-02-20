@@ -168,7 +168,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["Illustrator ", "UI/UX Designer " , "Animator ", "Product Designer "],
+            strings: ["an Illustrator ", "a UI/UX Designer " , "an Animator ", "a Product Designer "],
             typeSpeed: 100,
             backDelay: 500,
             loop: false,
