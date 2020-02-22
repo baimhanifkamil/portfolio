@@ -268,6 +268,9 @@
 
 @media all and (max-width: 480px) and (min-width: 320px) {
 
+  ol {
+    padding-left: 15px;
+  }
 
   header.boxed .header-margin{
     width:280px;
@@ -336,7 +339,7 @@
   }
 
   .content .text-intro .typewrite {
-    height: 84px;    
+    height: 84px;
   }
 
   /*

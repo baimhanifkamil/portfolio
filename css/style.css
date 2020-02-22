@@ -45,6 +45,10 @@ ol {
   padding-left: 40px;
 }
 
+ol > li {
+  padding-bottom: 10px;
+}
+
 a {
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in;
