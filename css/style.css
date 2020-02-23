@@ -415,6 +415,10 @@ CONTENT
   margin: 150px auto 0;
 }
 
+.navigation-page .text-intro{
+  width: 1140px;
+}
+
 .content .text-intro h1 {
   font-size: 43px;
   width: 70%;
