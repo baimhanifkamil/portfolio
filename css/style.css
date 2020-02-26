@@ -78,7 +78,9 @@ i {
 }
 
 blockquote h3{
-  line-height: 2;
+  line-height: normal;
+  font-weight: 600;
+  text-transform: none;
 }
 
 /*
@@ -849,6 +851,7 @@ h3 {
   color: #2980b9;
   font-weight: 900;
   line-height: 25px;
+  text-transform: uppercase;
 }
 
 .content-full p {
